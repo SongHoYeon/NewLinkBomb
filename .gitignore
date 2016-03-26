@@ -1,7 +1,5 @@
-Library/
-Temp/
-Obj/
-Temp/
+/Obj
+/Temp
 Assets/UnityVS/
 *.svd
 *.apk
