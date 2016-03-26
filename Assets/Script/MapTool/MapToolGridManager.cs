@@ -10,6 +10,9 @@ public class MapToolGridManager : MonoBehaviour {
     [SerializeField]
     private UIInput heightInput;
 
+    [SerializeField]
+    private MapToolObjectSelector objectSelector;
+
     private int width;
     private int height;
 
@@ -46,10 +49,20 @@ public class MapToolGridManager : MonoBehaviour {
 
             for (int i = 0; i < width; i++)
                 for (int j = 0; j < height; j++)
-                    NGUITools.AddChild(grid.gameObject, slotPrefab);
+                {
+                    GameObject inst = NGUITools.AddChild(grid.gameObject, slotPrefab);
+                    UIButtonMessage comp = inst.AddComponent<UIButtonMessage>();
+                    comp.target = gameObject;
+                    comp.functionName = "OnClickSlot";
+                }
             
             grid.Reposition();
         }
+    }
+
+    private void OnClickSlot(GameObject slot)
+    {
+        slot.GetComponent<MapToolSlot>().ChangeObjectType(objectSelector.SelectType);
     }
 
     private void SetColumnLimit()
