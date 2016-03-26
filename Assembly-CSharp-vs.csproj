@@ -185,8 +185,10 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Script\Chapter\LBChapter.cs" />
-     <Compile Include="Assets\Script\GlobalGameData.cs" />
+     <Compile Include="Assets\Script\Global\GlobalGameData.cs" />
+     <Compile Include="Assets\Script\Global\SceneName.cs" />
      <Compile Include="Assets\Script\LoadFileMng.cs" />
+     <Compile Include="Assets\Script\Logo\LBLogo.cs" />
      <Compile Include="Assets\Script\MapTool\LBMapTool.cs" />
      <Compile Include="Assets\Script\MapTool\MapToolGridManager.cs" />
      <Compile Include="Assets\Script\MapTool\MapToolObjectSelector.cs" />

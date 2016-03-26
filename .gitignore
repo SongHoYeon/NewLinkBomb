@@ -3,7 +3,7 @@ Library/
 obj/
 *.svd
 UnityVS*
-Library*
+
 !Library/*.asset
 !Library/AssetImportState
 !Library/AssetVersioning.db
