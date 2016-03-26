@@ -1,27 +1,33 @@
-/Obj
-/Temp
-/Library
-Assets/UnityVS/
+Temp/
+Library/
+obj/
 *.svd
-*.apk
-*.exe
-*.sln
-*.suo
-*.csproj
+UnityVS*
 
 !Library/*.asset
 !Library/AssetImportState
-!Library/AssetServerCacheV3
 !Library/AssetVersioning.db
 !Library/BuildPlayer.prefs
+!Library/ScriptMapper
+!Library/assetservercachev3
 !Library/expandedItems
 !Library/guidmapper
-!Library/s!cripMapper
-!Library/EditorUserBuildSettings.asset
-!Library/EditorUserSettings.asset
-!Library/metadata/
+!Library/unity default resources
+!Library/unity editor resources
 
 
-# OS and Shell generated
-.Trashes
-Thumbs.db
+
+/Project/Project.userprefs
+/Project/Assembly-CSharp.csproj
+/Project/Assembly-CSharp.pidb
+/Project/Assembly-CSharp-Editor.csproj
+/Project/Assembly-CSharp-Editor.pidb
+/Project/Assembly-CSharp-Editor-vs.csproj
+/Project/Assembly-CSharp-firstpass.csproj
+/Project/Assembly-CSharp-firstpass.pidb
+/Project/Assembly-CSharp-firstpass-vs.csproj
+/Project/Assembly-CSharp-vs.csproj
+/Project/Assembly-UnityScript-firstpass.pidb
+/Project/Assembly-UnityScript-firstpass.unityproj
+/Project/Assembly-UnityScript-firstpass-vs.unityproj
+/Project/Project.suo
