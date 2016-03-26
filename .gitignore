@@ -1,7 +1,10 @@
 /Obj
 /Temp
 /Library
+[Ll]ibrary
+
 Assets/UnityVS/
+*.dll
 *.svd
 *.apk
 *.exe
