@@ -1,14 +1,9 @@
-#This is the git ignore file used in Duck Hunted
-#Note that ! negates an ignore. We ignore everything in Library then
-#un-ignore the metadata folder and some specific files
-#Use at your own risk, this may totally destroy your project, but it worked for us
- 
-
-#NOTE: this will cause your collaborators to re-import assets periodically
-Temp/*
-Library/*
-Build/*
-#Un-ignore these specific files
+Temp/
+Library/
+obj/
+*.svd
+UnityVS*
+Library*
 !Library/*.asset
 !Library/AssetImportState
 !Library/AssetVersioning.db
@@ -19,10 +14,20 @@ Build/*
 !Library/guidmapper
 !Library/unity default resources
 !Library/unity editor resources
-!Library/metadata/
- 
 
-#ignoring pidb, they are just code completion caching data according to:
-# http://stackoverflow.com/questions/1022111/what-are-monodevelops-pidb-files
-*.pidb
-*.userprefs
+
+
+/Project/Project.userprefs
+/Project/Assembly-CSharp.csproj
+/Project/Assembly-CSharp.pidb
+/Project/Assembly-CSharp-Editor.csproj
+/Project/Assembly-CSharp-Editor.pidb
+/Project/Assembly-CSharp-Editor-vs.csproj
+/Project/Assembly-CSharp-firstpass.csproj
+/Project/Assembly-CSharp-firstpass.pidb
+/Project/Assembly-CSharp-firstpass-vs.csproj
+/Project/Assembly-CSharp-vs.csproj
+/Project/Assembly-UnityScript-firstpass.pidb
+/Project/Assembly-UnityScript-firstpass.unityproj
+/Project/Assembly-UnityScript-firstpass-vs.unityproj
+/Project/Project.suo
